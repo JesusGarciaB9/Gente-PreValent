@@ -1,6 +1,5 @@
 import   { useState } from "react";
-import PropTypes from "prop-types";
-import clsx from "clsx";  
+import PropTypes from "prop-types"; 
 import { Sidebar, Topbar } from "./Components"; 
  
 
