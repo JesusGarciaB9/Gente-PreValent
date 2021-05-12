@@ -1,9 +1,9 @@
-import Image1 from "./resources/images/card1image.svg";
-import Image2 from "./resources/images/card2image.svg";
-import Image3 from "./resources/images/card3image.svg";
-import Image4 from "./resources/images/card4image.svg";
+import Image1 from "../elements/resources/images/card1image.svg";
+import Image2 from "../elements/resources/images/card2image.svg";
+import Image3 from "../elements/resources/images/card3image.svg";
+import Image4 from "../elements/resources/images/card4image.svg";
 import styles from "../styles/Home.module.css";
-import Card from "./components/card";
+import Card from "../elements/components/card";
 
 const cardProps = {
   card1:{

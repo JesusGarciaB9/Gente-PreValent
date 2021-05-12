@@ -1,6 +1,6 @@
 import '../styles/globals.css'
 import 'tailwindcss/tailwind.css'
-import  { Main as MainLayout } from './layout'
+import  { Main as MainLayout } from '../elements/layout'
 function MyApp({ Component, pageProps }) {
   
   return (

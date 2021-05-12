@@ -1,15 +1,16 @@
 import React, { useState } from "react";
 import styles from "../../../styles/Home.module.css";
-import logoEmpresa from "../../resources/images/logoEmpresa.svg";
-import ButtonCard from "../../components/buttonCard";
-import imageButtonOne from "../../resources/images/checkIcon.svg";
-import imageButtonTwo from "../../resources/images/wrongIcon.svg";
-import imageButtonThree from "../../resources/images/adjunto.svg";
-import leftArrowIcon from "../../resources/images/leftArrowIcon.svg";
-import rightArrowIcon from "../../resources/images/rightArrowIcon.svg";
-import PdfBox from "../../components/pdfBox";
-import CompanyField from "../../components/companyField";
-import PdfModal from "../../components/pdfModal";
+import logoEmpresa from "../../../elements/resources/images/logoEmpresa.svg";
+import ButtonCard from "../../../elements/components/buttonCard";
+import imageButtonOne from "../../../elements/resources/images/checkIcon.svg";
+import imageButtonTwo from "../../../elements/resources/images/wrongIcon.svg";
+import imageButtonThree from "../../../elements/resources/images/adjunto.svg";
+import leftArrowIcon from "../../../elements/resources/images/leftArrowIcon.svg";
+
+import rightArrowIcon from "../../../elements/resources/images/rightArrowIcon.svg"; 
+import PdfBox from "../../../elements/components/pdfBox";
+import CompanyField from "../../../elements/components/companyField";
+import PdfModal from "../../../elements/components/pdfModal";
 
 const fieldProps = {
   field1: {
