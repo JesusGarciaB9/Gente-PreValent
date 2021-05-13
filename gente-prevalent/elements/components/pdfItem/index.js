@@ -13,7 +13,7 @@ const pdfItem = (props) => {
   }
   return (
  
-    <button onClick={()=>download(url)} className="grid grid-cols-5 px-4 pt-5  w-full font-normal items-center text-left content-center ">
+    <button onClick={()=>download(url)} className="grid grid-cols-5 px-4 mt-5 ripple-bg-white w-full font-normal items-center text-left content-center focus:outline-none ">
       <div className="grid col-span-3 text-lg content-center">
         {nombre }
       </div>

@@ -38,32 +38,34 @@ const Company = (props) => {
   const [showModal, setShowModal] = useState(false); //estado de modal de adjuntos
   const [showModal1, setShowModal1] = useState(false); //posible funcionalidad de otro modal
   const [showModal2, setShowModal2] = useState(false); //posible funcionalidad de otro modal
-
+  
+  
+ 
   const buttonProps = {
     button1: {
       message: "Aprobar Empresa ",
       image: imageButtonOne,
       modalState: showModal2,
-      setModalState: setShowModal2,
+      setModalState: setShowModal2, 
     },
     button2: {
       message: "Rechazar Empresa ",
       image: imageButtonTwo,
       modalState: showModal1,
-      setModalState: setShowModal1,
+      setModalState: setShowModal1,  
     },
     button3: {
       message: "Ver archivos adjuntos ",
       image: imageButtonThree,
       modalState: showModal,
-      setModalState: setShowModal,
+      setModalState: setShowModal, 
     },
   };
 
   return (
     <div className={styles.container3}>
       <PdfModal showModal={showModal} setShowModal={setShowModal} />
-      <div className=" flex flex-col ...  md:w-full w-11/12  ">
+      <div className=" flex flex-col ...  md:w-full w-11/12 animate-fade-in-down ">
         <div className="font-semibold flex  pb-4 text-sm pt-4 md:pl-8 md:text-2xl">
           {" "}
           <span className="text-custom-blue-100 pr-1">Administración </span> /
@@ -99,7 +101,7 @@ const Company = (props) => {
           </div>
 
           <div className="flex pt-5 text-sm pb-2 w-full text-center items-center justify-center">
-            <button>
+            <button className="focus:outline-none">
               {" "}
               <img src={leftArrowIcon} />{" "}
             </button>
@@ -107,7 +109,7 @@ const Company = (props) => {
               {" "}
               Empresa 1 de 2 pendiente por aprobación{" "}
             </div>
-            <button>
+            <button className="focus:outline-none">
               {" "}
               <img src={rightArrowIcon} />{" "}
             </button>

@@ -1,7 +1,6 @@
 import PdfBox from "../pdfBox";
 export default function pdfModal(props) {
-  const { showModal, setShowModal } = props;
-  console.log("showModal ", showModal);
+  const { showModal, setShowModal } = props; 
   return (
     <>
       {showModal ? (

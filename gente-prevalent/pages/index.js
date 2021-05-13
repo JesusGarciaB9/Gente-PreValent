@@ -38,7 +38,7 @@ export default function Home() {
   return (
     <div className={styles.container2}>
        
-      <div className=" md:place-items-center gap-6  pt-16
+      <div className=" md:place-items-center gap-6 
       w-full grid grid-cols-1  text-2xl   md:-mt-10 md:gap-10
       md:grid-cols-2  md:text-3xl  md:w-3/5 md:content-center"  >
         <Card cardProps={cardProps.card1}/>

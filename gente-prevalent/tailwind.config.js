@@ -47,28 +47,53 @@ const minwidth = {
   'full': '100%',
   'customCard':'90%',
 }
-const minHeight = {
+const minHeight = { 
   '0': '0',
   '1/4': '25%',
   '1/2': '50%',
   '3/4': '75%',
   'custom': '85%',
   'full': '100%',
-  'custom2':'150px'
+  'custom2':'150px',
+  custom3:'135px',
+  custom4:'100px'
  }
 
 module.exports = {
   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './elements/**/*.{js,ts,jsx,tsx}'],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: { keyframes: {
+      'fade-in-down': {
+          '0%': {
+              opacity: '0',
+              transform: 'translateY(-10px)'
+          },
+          '100%': {
+              opacity: '1',
+              transform: 'translateY(0)'
+          },
+      },
+    },
+  },
+  animation: {
+    'fade-in-down': 'fade-in-down 0.5s ease-out'
+  },
     colors: colors,
     minWidth: minwidth,
     minHeight:minHeight,
-    fontSize:fontSize
+    fontSize:fontSize,
+    ripple: theme => ({
+      colors: theme('colors'),
+      modifierTransition: 'background 0.5s',
+      darken: 0.04,
+      activeTransition: 'background 0.3s'
+  }),
   },
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-ripple')()
+  ],
 }

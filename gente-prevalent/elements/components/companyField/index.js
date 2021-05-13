@@ -7,7 +7,7 @@ const companyField = (props) => {
     }
     return (
       <div className="grid grid-cols-1  pb-14  px-4  items-center font-bold w-full  ">
-        <label className="grid col-span-1 text-sm text-custom-gray-800 w-full" for="field">
+        <label className="grid col-span-1 text-sm text-custom-gray-800 w-full" htmlFor="field">
             {headline}
         </label>
  

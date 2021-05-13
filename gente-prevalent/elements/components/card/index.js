@@ -14,15 +14,17 @@ const Card = (props) => {
 
 
   return (
-    <button  onClick={handleClick} className="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 ... w-full focus:outline-none text-left shadow-lg rounded-lg min-h-custom md:min-h-3/4 h-auto bg-white md:min-w-customCard  ">
+    <button  onClick={handleClick} className="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 ... w-full 
+    focus:outline-none text-left shadow-lg rounded-lg min-h-custom md:min-h-3/4 
+    h-auto ripple-bg-white md:min-w-customCard mb-6 md:mb-1 animate-fade-in-down">
       <div className="grid grid-cols-3 md:grid-cols-1">
-        <div className="flex mb-2 pl-3 -mt-5 md:-mt-10 md:pl-4 p-3 md:w-full ">
+        <div className="flex mb-2 pl-3 -mt-8 md:-mt-10 md:pl-4 p-3 md:w-full ">
           <img
             className="w-16 h-16 md:w-16 md:h-20 p-3 rounded bg-custom-blue-100 "
             src={img}
           />
         </div>
-        <div className="flex sm:min-h-custom2 p-3 pt-2 md:w-full col-span-2 text-custom-gray-400   ">
+        <div className="flex min-h-custom4 md:min-h-custom3 p-3 pt-2 md:w-full col-span-2 text-custom-gray-400   ">
           {nombre}
         </div>
       </div>

@@ -42,7 +42,7 @@ const Topbar = (props) => {
     <div className="  grid grid-cols-12 md:hidden w-full h-full   ">
       {" "}
       <div className="flex col-span-10 self-center justify-center">
-        <a className="flex pl-3" href="https://www.prevalentware.com">
+        <a className="flex pl-3" href="/">
           <img src={logo} alt={"logo"} className=" " />
         </a>
         <div className="flex self-center ">GentePrevalente</div>
@@ -96,25 +96,25 @@ const Topbar = (props) => {
               <div className="   self-center pr-1">
                 <img src={empleoIcon} alt={"empleoIcon"} />
               </div>
-              <div className=" pr-1 self-center">Empleo</div>{" "}
-              <div className="   self-center pr-1">
+              <div className="  pr-1 self-center">Empleo</div>{" "}
+              <button className="ripple focus:outline-none   self-center pr-1">
                 <img src={downArrowIcon} alt={"downArrowIcon"} />
-              </div>
+              </button>
             </div>
             <div className="flex col-span-2 self-center">
               <div className="   self-center pr-1">
                 <img src={cvIcon} alt={"cvIcon"} />
               </div>
-              <div className="  self-center">Mi CV</div>{" "}
+              <button className=" focus:outline-none ripple self-center">Mi CV</button>{" "}
             </div>
             <div className="flex col-span-2 self-center">
               <div className="self-center rounded-full bg-custom-gray-600 h-8 w-8 flex items-center justify-center pr-3 ">
                 {" "}
               </div>
               <div className=" pr-2 pl-2 self-center">Jesus </div>{" "}
-              <div className=" pr-2 pl-2 self-center  ">
+              <button className="focus:outline-none ripple pr-2 pl-2 self-center  ">
                 <img src={downArrowIcon} alt={"downArrowIcon"} />
-              </div>
+              </button>
             </div>
           </div>
         </div>
