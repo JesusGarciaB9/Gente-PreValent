@@ -1,5 +1,5 @@
 import PdfBox from "../pdfBox";
-export default function pdfModal(props) {
+export default function pdfModal(props) { //dialog que contiene los archivos pdf
   const { showModal, setShowModal } = props; 
   return (
     <>

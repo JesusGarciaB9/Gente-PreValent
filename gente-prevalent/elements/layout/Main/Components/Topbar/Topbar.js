@@ -6,38 +6,8 @@ import empleoIcon from "../../../../resources/images/empleoIcon.svg";
 import downArrowIcon from "../../../../resources/images/downArrowIcon.svg";
 import cvIcon from "../../../../resources/images/cvIcon.svg";
 import menuIcon from "../../../../resources/images/menuIcon.svg";
-const Topbar = (props) => {
-  const [mobileOpen, setMobileOpen] = useState(false);
-  const [anchorEl, setAnchorEl] = useState(null);
-  const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = useState(null);
-  const isMenuOpen = Boolean(anchorEl);
-  const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
-  const { onSidebarOpen } = props;
+const Topbar = (props) => {    //Barra superior con las 2 versiones,movil y desktop
 
-  const handleProfileMenuOpen = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
-
-  const handleMobileMenuClose = () => {
-    setMobileMoreAnchorEl(null);
-  };
-
-  const handleMenuClose = () => {
-    setAnchorEl(null);
-    handleMobileMenuClose();
-  };
-
-  const handleMobileMenuOpen = (event) => {
-    setMobileMoreAnchorEl(event.currentTarget);
-  };
-  const handleDrawerToggle = () => {
-    setMobileOpen(!mobileOpen);
-  };
-
-  const open = Boolean(anchorEl);
-
-  const menuId = "primary-search-account-menu";
-  const mobileMenuId = "primary-search-account-menu-mobile";
   const renderMobileMenu = (
     <div className="  grid grid-cols-12 md:hidden w-full h-full   ">
       {" "}

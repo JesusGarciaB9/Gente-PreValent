@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-const companyField = (props) => { 
+const companyField = (props) => { //cada uno de los inputs field que se encuentran en la vista #2
     const {headline, description} = props.fieldProps;
     const [value,setValue] = React.useState(description);
     function handleChange(event) {

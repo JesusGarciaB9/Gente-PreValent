@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 
  
 
-const Card = (props) => {
+const Card = (props) => { //cards en home view
   const { nombre, img, bottomMessage, link } = props.cardProps;
   const router = useRouter()
 

@@ -1,6 +1,6 @@
 import PdfItem from "../pdfItem";
 
-const pdfProps = {
+const pdfProps = { 
   pdf1:{
     nombre: "Rut PrevalentWare", 
     bottomMessage:"Rut Pre...",
@@ -27,7 +27,7 @@ const pdfProps = {
     url:"/pdfs/Pdf5.pdf",
   }
 }
-const pdfBox = (props) => {
+const pdfBox = (props) => { //container que muestra los pdfs con su titulo
 const {isModal} = props;
 
   return (

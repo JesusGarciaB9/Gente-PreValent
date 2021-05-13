@@ -1,5 +1,5 @@
 import pdfImage from "../../resources/images/pdfIcon.svg";
-const pdfItem = (props) => {
+const pdfItem = (props) => { //cada uno de los items del listado de pdfs
   const {  nombre , 
   bottomMessage ,
   url} = props.pdfProp;

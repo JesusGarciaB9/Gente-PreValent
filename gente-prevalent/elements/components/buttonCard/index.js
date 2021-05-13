@@ -1,11 +1,11 @@
  
-const buttonCard = (props) => {
+const buttonCard = (props) => { //bottones de vista en view company 
   const { message, image, modalState, setModalState } =
     props.buttonProps; 
 
   const handlerModal = (e) => {
     e.preventDefault(); 
-      setModalState(!modalState); 
+      setModalState(!modalState); //cambio de estado del respectivo modal de cada botón(en este caso el modal de adjuntos)
  
   };
   return (

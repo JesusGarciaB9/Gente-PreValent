@@ -34,7 +34,7 @@ const fieldProps = {
     description: "1 - 10",
   },
 };
-const Company = (props) => {
+const Company = (props) => { //Vista numero 2 , Aprobación de empresas
   const [showModal, setShowModal] = useState(false); //estado de modal de adjuntos
   const [showModal1, setShowModal1] = useState(false); //posible funcionalidad de otro modal
   const [showModal2, setShowModal2] = useState(false); //posible funcionalidad de otro modal
@@ -64,11 +64,11 @@ const Company = (props) => {
 
   return (
     <div className={styles.container3}>
-      <PdfModal showModal={showModal} setShowModal={setShowModal} />
+      <PdfModal showModal={showModal} setShowModal={setShowModal} /> 
       <div className=" flex flex-col ...  md:w-full w-11/12 animate-fade-in-down ">
         <div className="font-semibold flex  pb-4 text-sm pt-4 md:pl-8 md:text-2xl">
           {" "}
-          <span className="text-custom-blue-100 pr-1">Administración </span> /
+          <span className="text-custom-blue-100 pr-1"> <a   href="/">Administración </a></span> /
           Aprobación de Empresas
         </div>
         <div className="flex flex-col-reverse md:flex-col w-full justify-center md:w-8/12 self-center items-center justify-items-center self-start">

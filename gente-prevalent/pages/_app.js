@@ -4,7 +4,7 @@ import  { Main as MainLayout } from '../elements/layout'
 function MyApp({ Component, pageProps }) {
   
   return ( 
-    <MainLayout>
+    <MainLayout> 
     <Component {...pageProps } />
     </MainLayout>  
     )

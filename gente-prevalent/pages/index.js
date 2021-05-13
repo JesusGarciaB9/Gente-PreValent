@@ -34,7 +34,7 @@ const cardProps = {
 }
 
 
-export default function Home() {
+export default function Home() { //vista inicial
   return (
     <div className={styles.container2}>
        
